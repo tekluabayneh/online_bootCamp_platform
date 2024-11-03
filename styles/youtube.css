@@ -1,0 +1,19 @@
+#services-d {
+  background: #fafbfe;
+  padding-left: 1.5rem;
+}
+.videoInfoWrapper {
+  background: #ebeff9;
+  padding: 1rem 0.7rem;
+  margin-bottom: 1rem;
+}
+.videoInfoWrapper a {
+  font-size: 20.8px;
+  font-weight: 900;
+  color: black;
+  text-decoration: none;
+}
+
+.videoInfoWrapper a:hover {
+  color: #ca6002;
+}

@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: 0.5 ease;
+  position: fixed;
+  transition: 0.5s ease;
+}
+
+.container {
+  width: 100%;
+  padding: 12px;
+  transition: 0.5s ease;
+}
+
+.header_active {
+  background: #000;
+  transition: 0.5s ease;
+}
+.container_active {
+  padding: 5px;
+  transition: 0.5s ease;
+}
+
+.row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-lg-9 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  width: 100%;
+  padding-top: 1rem;
+  /* padding-right: -6rem; */
+}
+.menu nav .scrollnav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.scrollnav li {
+  list-style: none;
+  transition: 0.5s;
+}
+.menu .scrollnav:last-child {
+  margin-right: 1rem;
+}
+.logo {
+  width: 200px;
+  height: 28px;
+}
+.menu ul li a {
+  width: 100%;
+  /* display: inline-block; */
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 31px 10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-size: 16px;
+  text-decoration: none;
+}
+a,
+a:hover,
+a:focus {
+  color: #da7000;
+}
+.scrollnav li a:hover {
+  color: #da7000;
+}
+.hr_btn {
+  width: 100%;
+  margin-left: 1rem;
+  text-wrap: nowrap;
+  color: palegoldenrod 12px 5px;
+  border-radius: 0.4rem;
+  position: relative;
+}
+
+.button-2 {
+  text-transform: capitalize;
+  font-weight: 500;
+  /* min-width: 130px; */
+  /* height: 40px; */
+  color: #0b2b3c;
+  padding: 10px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 30px;
+  border: 1px solid #949494;
+  background: #fff;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+}
+.button-2:hover {
+  background: #da7000;
+  color: #f0f7ff;
+}
+
+.canvas_open span:last-child,
+.canvas_open span:first-child {
+  width: 36px;
+}
+/* menu small mobile and small area  */
+.mobile-menu-area {
+  width: 100%;
+}
+
+.offcanvas_menu_wrapper {
+  width: 290px;
+  position: fixed;
+  background: #fff;
+  z-index: 999;
+  top: 0;
+  height: 100vh;
+  transition: 0.5s;
+  left: 0;
+  margin-left: -350px;
+  padding: 20px 0px 30px;
+  overflow-y: auto;
+  transition: 0.5s ease-in-out;
+}
+.active_links {
+  margin-left: 0;
+}
+
+.canvas_open span {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  margin: 0.4rem;
+}
+
+.offcanvas_menu #menu {
+  width: 100%;
+  height: auto;
+  padding: 12px -5px;
+  margin-top: 2rem;
+}
+
+.offcanvas_menu #menu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+#menu ul li {
+  width: 100%;
+  list-style-type: none;
+  border-bottom: 1px solid gray;
+  padding: 0 10px 10px;
+  margin: 0 0 10px;
+}
+#menu ul li a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 16px;
+  user-select: none;
+}
+
+#menu ul li a:hover {
+  color: #da7000;
+}
+
+.offcanvas_menu .mobile-logo img {
+  width: 197px;
+  height: 27px;
+  padding-left: 1rem;
+}
+.canvas_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .col-lg-9 {
+    display: none;
+  }
+  .row {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 991px) {
+  .mobile-menu-area {
+    display: none;
+  }
+  .menu nav .scrollnav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* margin: 0 1rem; */
+  }
+  .canvas_open {
+    display: none;
+  }
+  .hr_btn {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1161px) {
+  .menu .scrollnav:last-child {
+    margin-right: 5rem;
+  }
+}

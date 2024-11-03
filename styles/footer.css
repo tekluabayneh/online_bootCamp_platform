@@ -1,0 +1,53 @@
+/* footer  page style start here */
+.footer {
+  width: 100%;
+}
+
+.footer-top {
+  padding: 70px 0 40px 0;
+  background-color: #3b455a;
+  margin-top: 2rem;
+}
+
+.footer h5 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+}
+.footer ul li {
+  list-style: none;
+}
+
+.footer .footer-social-list {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.footer .footer-social-list li i {
+  border: 1px solid white;
+  border-radius: 50%;
+  color: wheat;
+  padding: 0.3rem;
+  transition: 0.5 ease-in-out;
+}
+
+.footer .footer-social-list li i:hover {
+  background: #fff;
+  color: gray;
+}
+
+.footer-top .list-menu a {
+  text-decoration: none;
+  line-height: 28px;
+  color: rgba(213, 213, 213, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+.footer-top .list-menu a:hover {
+  color: rgba(213, 213, 213, 0.9);
+}
+
+.footer ul li {
+  color: rgba(213, 213, 213, 0.6);
+  line-height: 28px;
+}
