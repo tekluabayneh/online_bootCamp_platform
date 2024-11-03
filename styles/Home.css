@@ -400,7 +400,7 @@ p {
   width: 100%;
   background: #344767;
   color: white;
-  padding: 0 0 0 1.5rem;
+  /* padding: 0 0 0 1.5rem; */
 }
 
 .applicant-img-2 img {
@@ -502,6 +502,7 @@ p {
 .job-board-item .top {
   width: 100%;
   background: #000;
+  
 }
 
 .job-board-item .top .img {
@@ -533,6 +534,7 @@ p {
 
 .hero-area.dev-shop .container {
   padding-top: 4rem;
+  padding-left: 7rem;
 }
 .hero-area.dev-shop h2 {
   font-size: 35px;
@@ -586,7 +588,7 @@ p {
 }
 
 #youth .section-padding {
-  padding: 0 0 0 1rem;
+  /* padding: 0 0 0 1rem; */
 }
 
 #academy .applicant-img img {
@@ -597,9 +599,25 @@ p {
     16px 40px 75px -40px rgba(0, 0, 0, 0.2);
 }
 
+.section-padding.hero-area-2 .container {
+  /* padding-right: 4rem; */
+  /* margin-right: 3rem; */
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding.hero-area-2 .container {
+    /* margin-right: 0; */
+    margin-top: 3rem;
+  }
+}
+
 @media (min-width: 991px) {
   .applicant-img img {
     transform: rotateY(-35deg) rotateX(15deg);
+  }
+  .section-padding.hero-area-2 .container {
+    margin-right: 3rem;
   }
 }
 @media (min-width: 900px) {
@@ -608,7 +626,7 @@ p {
   }
 
   .hero-caption-2 {
-    margin-right: 4.5rem;
+    /* margin-right: 4.5rem; */
     padding: 4rem 0;
   }
 }

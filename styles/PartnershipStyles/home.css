@@ -7,19 +7,106 @@ body {
   /* background: #000; */
   width: 100vw;
   height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 .hero-area.empower {
   width: 100%;
   height: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-image: url("../.././asset/www.evangadi.com/Evangadi_Networks/10052.jpg");
   position: relative;
-  padding-top: 5rem;
+  padding-top: 90px;
+  /* padding-top: 5rem; */
   color: white;
 }
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero-area {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  /* padding-top: 410px; */
+}
+.hero-caption {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
 
-.hero-area.empower p {
-  padding-top: 112rem;
+.hero-area .container .row {
+  padding-left: 1.5rem;
+}
+
+.custom-shape-divider-bottom-1638549227 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-bottom-1638549227 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 106px;
+}
+.custom-shape-divider-bottom-1638549227 .shape-fill {
+  fill: #ffffff;
+}
+
+.hero-caption h2 {
+  font-size: 35px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-caption p {
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+  font-weight: 500;
+}
+
+.hero-button {
+  margin-bottom: 1rem;
+}
+.button-1 {
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 500;
+  background-image: linear-gradient(310deg, #ff7800, #e33f00);
+  padding: 12px 32px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+}
+
+.button-2 {
+  text-wrap: nowrap;
+}
+
+@media (max-width: 720px) {
+  section {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 576px) {
+  .hero-caption {
+    padding-top: 100px;
+  }
 }
