@@ -21,7 +21,6 @@ img {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  
 }
 
 .hero_area.main {
@@ -557,7 +556,7 @@ p {
 .hero-area.dev-shop .row {
   padding-right: 6rem;
 }
-
+/* ///////////////////////////////////////////////////////// */
 #custom-shape-divider-bottom-1638549227 {
   position: absolute;
   bottom: 0;
