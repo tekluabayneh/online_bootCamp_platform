@@ -1,0 +1,50 @@
+.section-padding-2 {
+  padding: 2rem 0 2rem 0;
+}
+.roadmap h2 {
+  font-size: 46px;
+  font-weight: 900;
+}
+
+.section-padding-2 .item {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.item h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #344767;
+}
+
+.item i {
+  width: 50px;
+  height: 50px;
+  float: left;
+  font-size: 50px;
+  background: transparent;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: red;
+}
+
+.item .content {
+  /* float: right; */
+}
+
+@media (max-width: 576px) {
+  .roadmap h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,72 @@
+#ourstory {
+  padding-top: 50px;
+}
+
+#ourstory .row {
+  padding: 1rem 0 0 2rem;
+}
+
+.hexagon-icon {
+  height: 15px;
+  width: 14px;
+  position: relative;
+  display: block;
+  margin: 5px auto 0;
+}
+
+.hexagon-icon:before {
+  content: "";
+  background: #ff8500;
+  left: 100%;
+  width: 75px;
+  position: absolute;
+  height: 1px;
+  top: 6px;
+  margin-left: 6px;
+}
+.hexagon-icon:after {
+  content: "";
+  background: #ff8500;
+  left: -591%;
+  width: 75px;
+  position: absolute;
+  height: 1px;
+  top: 6px;
+  /* margin-left: 6px; */
+}
+
+.hexagon-icon i {
+  position: relative;
+  width: 14px;
+  height: 8px;
+  border-left: solid 3px #ff8500;
+  border-right: solid 3px #ff8500;
+  display: block;
+  margin: 0 auto;
+  top: 3px;
+  z-index: 2;
+}
+
+.info-box-s1 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.info-box-s1 img {
+  width: 128px;
+  height: 128px;
+}
+
+@media (min-width: 991px) {
+  #ourstory .row h2 {
+    font-weight: 900;
+  }
+
+  #ourstory {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+}

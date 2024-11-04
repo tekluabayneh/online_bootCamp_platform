@@ -33,9 +33,10 @@ img {
 .hero_area {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; /* Center the image */
+  background-position: center;
   position: relative;
   z-index: 1;
+  object-fit: cover;
 }
 
 #custom-shape-divider-bottom-1730457356 {
@@ -502,7 +503,6 @@ p {
 .job-board-item .top {
   width: 100%;
   background: #000;
-  
 }
 
 .job-board-item .top .img {

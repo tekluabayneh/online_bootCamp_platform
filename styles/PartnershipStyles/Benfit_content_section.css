@@ -1,0 +1,51 @@
+.section-padding.pt-150 {
+  padding-top: 150px;
+}
+
+.job-board-item {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.job-board-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.job-board-item .top img {
+  width: 50px;
+  height: 53px;
+  margin: 0.5rem 0;
+}
+
+.job-board-item .middle h4 {
+  font-weight: 600;
+  color: #333;
+}
+
+.job-board-item .middle p {
+  /* padding-bottom: -1rem; */
+  line-height: 1.2;
+  font-size: 16px;
+}
+
+.job-board-item .middle span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0080cc;
+  background: #bff3ff7d;
+  padding: 3px 20px;
+  display: inline-block;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+@media (max-width: 720px) {
+  .section-padding.pt-150 {
+    padding-top: 20px;
+  }
+}

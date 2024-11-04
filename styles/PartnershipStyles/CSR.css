@@ -1,0 +1,14 @@
+.hero-area-2 {
+    background: #FAFBFE;
+}
+
+#internship .card-box {
+  max-width: 240px;
+  position: absolute;
+  bottom: -30px;
+  left: 1rem;
+}
+
+#internship .card-img img {
+  transform: scale(1) perspective(1040px) rotateY(-18deg) rotateX(0) rotate(0);
+}
