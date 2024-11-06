@@ -1,0 +1,117 @@
+#header_main {
+  padding: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.5s linear, padding 0.2s ease-in;
+  box-shadow: 0 2px 4px rgba(81, 107, 152, 0.16);
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+.header_container {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  display: table;
+  transition: all 0.5s ease-in-out;
+}
+.active_heaerContainer {
+  transition: all 0.5s ease-in-out;
+  padding: 0;
+}
+
+#header_main .header_container a img {
+  width: 180px;
+  height: 25.19px;
+}
+
+.header_container .row {
+  width: 0;
+}
+
+.header.default .col-lg-9 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header_container .col-lg-9 .menu nav {
+  text-align: right;
+  list-style: none;
+  color: black;
+}
+.header.default .col-lg-9 .menu nav ul li {
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.col-lg-9 .menu nav ul li a {
+  color: #344767;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.header.default a {
+}
+
+a,
+.col-lg-9 .menu nav ul li a:hover,
+.col-lg-9 .menu nav ul li a:focus {
+  color: #da7000;
+}
+
+.header.default .align-self-center {
+  text-align: right;
+  display: flex;
+  gap: 20rem;
+}
+
+.header.default .col-lg-3 .canvas_open {
+  position: relative;
+}
+
+.header.default .col-lg-3 .canvas_open span a {
+  width: 5rem;
+  height: 1px;
+  background: #000;
+  margin-bottom: 0.5rem;
+}
+
+.canvas_open span:last-child,
+.canvas_open span:first-child {
+  width: 36px;
+}
+
+.canvas_open span {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  margin: 0.4rem;
+}
+
+@media (max-width: 550px) {
+  .header.default .align-self-center {
+    gap: 10rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header.default .align-self-center {
+    gap: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .header.default .col-lg-3 .canvas_open {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header.default .col-lg-9 {
+    display: none;
+  }
+}

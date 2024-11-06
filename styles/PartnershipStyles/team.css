@@ -1,0 +1,31 @@
+#team .col-lg-4 .team-item {
+  border: 1.5px solid red;
+  margin: 4px 0px;
+}
+
+#team .col-lg-4 .team-item img {
+  width: 100%;
+}
+
+#team .col-lg-4 .team-item .content {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.team-item .content h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2px;
+  color: #ff8500;
+}
+.team-item .content p {
+  font-size: 15px;
+  font-weight: 700;
+  color: #344767;
+}
+@media (min-width: 991px) {
+  #team .container {
+    margin-right: 1rem;
+  }
+}

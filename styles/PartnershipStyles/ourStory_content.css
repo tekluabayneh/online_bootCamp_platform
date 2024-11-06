@@ -6,11 +6,16 @@
   font-weight: 900;
 }
 
-.section-padding-2 .item {
+.item {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   padding: 1rem;
   margin-bottom: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.item:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .item {
@@ -38,13 +43,37 @@
   -webkit-text-stroke-color: red;
 }
 
-.item .content {
-  /* float: right; */
+/* shcolor  page styles start here */
+
+/* shcolor  page styles end here */
+
+.applicant-img img {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transform: rotateY(-35deg) rotateX(15deg);
+  border-radius: 0.625rem;
+  box-shadow: 25px 60px 125px -25px rgba(80, 102, 144, 0.1),
+    16px 40px 75px -40px rgba(0, 0, 0, 0.2);
+}
+
+#scholar .applicant-img-2 img {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+/* instagram  container */
+.iframe_container {
+  padding-top: 2rem;
 }
 
 @media (max-width: 576px) {
   .roadmap h2 {
     font-size: 30px;
     font-weight: 700;
+  }
+}
+@media (max-width: 991px) {
+  .applicant-img img {
+    transform: translateY(0);
   }
 }

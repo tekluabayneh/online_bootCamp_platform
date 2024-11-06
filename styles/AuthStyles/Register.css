@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.mobile-logo img {
+  width: 197px;
+  height: 27px;
+}
+
+.off_canvars_overlay.active {
+  opacity: 0.5;
+  visibility: visible;
+}
+.off_canvars_overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  cursor: crosshair;
+  background: #232323;
+  top: 0;
+}
+
+.offcanvas_menu_wrapper {
+  width: 290px;
+  position: fixed;
+  background: #fff;
+  z-index: 999;
+  top: 0;
+  height: 100vh;
+  transition: 0.5s;
+  left: 0;
+  margin-left: -300px;
+  padding: 20px 0px 30px;
+  overflow-y: auto;
+  z-index: 3333;
+}
+.active_links {
+  margin-left: 0;
+}
+.offcanvas_main_menu li {
+  list-style: none;
+}
+
+.offcanvas_main_menu li a {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: block;
+  padding: 0px 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ededed;
+  color: #333;
+}
+
+.canvas_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.canvas_close i {
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+}
+
+.mobile-logo {
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 207px;
+  padding-left: 10px;
+}
+.offcanvas_menu {
+  display: none;
+}
+
+/* ----------------- resgister home page style start here */
+
+#home {
+  background-image: url(../../asset/Evangadi_Networks/10001.svg);
+  background-size: cover;
+  background-color: #f8f8f8;
+}
+p {
+  color: #67748e;
+}
+.slide-home {
+  padding-top: 7rem;
+  padding-bottom: 12rem;
+}
+
+.auth-title {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.panel-login .form-control,
+.panel-signup .form-control,
+.panel-forgot .form-control {
+  color: #333333;
+  font-size: 16px;
+  height: 50px;
+  padding: 12px;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.text-gradient {
+  background: transparent;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  background-image: linear-gradient(310deg, #000000, #e33f00);
+}
+h2 {
+  font-size: 45px;
+  color: #4b456f;
+  line-height: 56px;
+  font-weight: 600;
+}
+p.font-p {
+  color: #656565;
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+.btn-blue {
+  color: #fff !important;
+  background-color: #fe8402;
+  border: none;
+  font-size: 15px;
+  line-height: 25px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  padding: 8px 25px !important;
+  cursor: pointer;
+}
+
+.btn-blue:hover {
+  background-color: #ff9422;
+  color: #f8f8f8;
+}
+
+.btn-primary {
+  padding: 12px 25px;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* ----------------- resgister home page style end here */
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+}
+.pwdMask {
+  position: relative;
+}
+.pwd-toggle:hover {
+  cursor: pointer;
+}
+.pwdMask .pwd-toggle {
+  color: #cccccc;
+  position: absolute;
+  z-index: 2;
+}
+
+.pwdMask .pwd-toggle {
+  top: 15px;
+  right: 15px;
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input:before {
+  background-color: #fe8402;
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+input:focus + .focus-input:before {
+  width: 100%;
+}
+
+.authfy-login {
+  height: 515px;
+  margin: 40px auto 25px;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  /* box-shadow: 0 3px 5px rgba(0, 0, 0, .05); */
+  background-color: #fff;
+  border-radius: 10px;
+  /* border: 1px solid #ddd; */
+  box-shadow: 0 4px 12px rgba(158, 158, 158, 0.12);
+  border-radius: 8px;
+}
+
+.authfy-login .authfy-panel {
+  padding: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+.authfy-login .active {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+@media only screen and (max-width: 767px) {
+  .offcanvas_menu {
+    display: block;
+  }
+}
