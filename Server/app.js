@@ -14,9 +14,6 @@ app.use(
   })
 );
 
-// app.get("/home", (req, res) => {
-//   res.json("welcome home");
-// });
 
 app.use("/api/users", Router);
 

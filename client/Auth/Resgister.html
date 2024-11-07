@@ -16,13 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-
     <link rel="stylesheet" href="../styles/AuthStyles/Register.css" />
 
-    <!-- menu section area -->
-    <link rel="stylesheet" href="../styles/AuthStyles/MobileMenu.css" />
-
     <!-- header css -->
+
     <link rel="stylesheet" href="../styles/AuthStyles/Header.css" />
 
     <link rel="stylesheet" href="../styles/footer.css" />
@@ -88,9 +85,9 @@
             </div>
             <div id="menu" class="text-left">
               <ul class="offcanvas_main_menu">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/legal/terms/">Terms</a></li>
-                <li><a href="/legal/privacy/">Privacy</a></li>
+                <li class="active"><a href="../Home.html">Home</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Privacy</a></li>
               </ul>
             </div>
           </div>
@@ -114,6 +111,10 @@
 
                     <div class="authfy-panel panel-login text-center p-4 mt-3">
                       <div class="authfy-heading">
+                        <span
+                          class="showSigninMessage"
+                          style="color: red"
+                        ></span>
                         <h3 class="auth-title">Login to your account</h3>
                         <p>
                           Don’t have an account?
@@ -129,11 +130,7 @@
                       <div class="row">
                         <div class="col-xs-12 col-sm-12">
                           <div class="ajax-return-login"></div>
-                          <form
-                            name="loginForm"
-                            class="loginForm"
-                            method="POST"
-                          >
+                          <form name="loginForm" class="loginForm">
                             <div class="form-group wrap-input m-2">
                               <input
                                 type="email"
@@ -175,6 +172,7 @@
                             <div class="form-group">
                               <button
                                 class="btn btn-lg btn-primary btn-block w-100"
+                                id="btnLogin"
                                 type="submit"
                               >
                                 Login
@@ -191,8 +189,10 @@
                     <div class="authfy-panel panel-signup text-center active">
                       <div class="row">
                         <div class="col-xs-12 col-sm-12">
+                          <p class="showMessage" style="color: red"></p>
                           <div class="authfy-heading">
                             <h3 class="auth-title">Join the network</h3>
+
                             <p>
                               Already have an account?<a
                                 class="lnk-toggler"
@@ -204,12 +204,7 @@
                             </p>
                           </div>
                           <div class="ajax-return"></div>
-                          <form
-                            name="signupForm"
-                            class="signupForm"
-                            action=""
-                            method="POST"
-                          >
+                          <form name="signupForm" id="signupForm">
                             <div class="form-group wrap-input m-1">
                               <input
                                 type="email"
@@ -274,6 +269,7 @@
                             <div class="form-group">
                               <button
                                 class="btn btn-lg btn-primary btn-block w-100 p-2"
+                                id="btnSignin"
                                 type="submit"
                               >
                                 Agree and Join
@@ -281,7 +277,7 @@
                             </div>
                           </form>
                           <a
-                            class="lnk-toggler"
+                            class="lnk-toggler mb-5"
                             data-panel=".panel-login"
                             href="#"
                             >Already have an account?</a
@@ -457,7 +453,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../scripts/AuthFunctional.js"></script>
-    <script src="../scripts/header.js"></script>
     <script src="../scripts/header.js"></script>
   </body>
 </html>
