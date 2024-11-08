@@ -1,0 +1,141 @@
+.header.default {
+  padding: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: flex;
+  box-shadow: 0 2px 4px rgba(81, 107, 152, 0.16);
+  width: 100vw;
+  background: #fff;
+}
+#row_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 36rem; */
+  padding: 1.5rem;
+}
+
+.header.default .menu {
+  position: absolute;
+  top: 30px;
+  right: 4rem;
+}
+
+.header.default .menu nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.header.default .menu nav ul li {
+  list-style: none;
+}
+
+.header.default .menu nav ul li a {
+  text-decoration: none;
+  color: #333;
+  text-wrap: nowrap;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+a,
+header.default .menu nav ul li a:hover,
+a:hover,
+a:focus {
+  color: #da7000;
+}
+
+/* mobile section */
+.offcanvas_menu_wrapper {
+  width: 290px;
+  position: fixed;
+  background: #fff;
+  z-index: 999999;
+  top: 0;
+  height: 100vh;
+  transition: 0.5s;
+  left: 0;
+  margin-left: -300px;
+  padding: 20px 0px 30px;
+  overflow-y: auto;
+}
+.active_links {
+  margin-left: 0;
+}
+.mobile-menu-area .offcanvas_main_menu {
+  padding-left: 5px;
+}
+.mobile-menu-area .offcanvas_main_menu li {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  list-style: none;
+}
+
+.mobile-menu-area .offcanvas_main_menu li a {
+  color: #333;
+  text-decoration: none;
+  padding-top: 1rem;
+}
+
+.canvas_close {
+  position: absolute;
+  top: 10px;
+  right: 13px;
+}
+
+.canvas_close a i {
+  font-size: 23px;
+  font-weight: 700;
+  color: black;
+  padding: 1rem 1rem 0 0;
+}
+
+.mobile-logo {
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 207px;
+  padding-left: 10px;
+}
+
+.offcanvas_menu .mobile-logo img {
+  width: 197px;
+  height: 27px;
+  padding-left: 1rem;
+}
+
+.canvas_open span {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  margin: 0.4rem;
+}
+.canvas_open span:nth-child(2) {
+  width: 36px;
+}
+
+@media (max-width: 991px) {
+  .header.default .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .canvas_open {
+    display: none;
+  }
+  .offcanvas_menu_wrapper {
+    display: none;
+  }
+}
+/* 
+@media (max-width: 400px) {
+  #row_flex {
+    gap: 20rem;
+  }
+} */

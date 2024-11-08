@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
       input.value = "";
     });
 
-    window.location.href = "../Home.html";
+    window.location.href = "../Protectted/index.html";
   };
 
   btnLogin.addEventListener("submit", Login);

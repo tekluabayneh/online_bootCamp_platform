@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+.onboarding-section {
+  padding-bottom: 5rem;
+}
+.onboarding-section img {
+  max-width: 10%;
+}
+.find_team_flow_wrapper {
+  border-bottom: 1px solid gray;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  padding: 1.5rem 0;
+}
+.find_team_flow_wrapper a {
+  text-decoration: none;
+  color: #4f4d4d;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.find_team_flow_wrapper a:hover {
+  color: #4f4d4d;
+}
+
+.find_team_flow_wrapper .link_head {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.find_team_flow_wrapper .cta_text {
+  position: absolute;
+  top: 3rem;
+  left: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.find_team_flow_wrapper i {
+  position: absolute;
+  top: 3rem;
+  right: 5px;
+  font-size: 1.5rem;
+  text-align: right;
+  color: #000;
+  font-weight: 900;
+}
+
+@media (max-width: 705px) {
+  .onboarding-section img {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .find_team_flow_wrapper .cta_text {
+    left: 8rem;
+  }
+}
+@media (max-width: 705px) {
+  .find_team_flow_wrapper {
+    padding: 3rem;
+  }
+  .find_team_flow_wrapper .cta_text {
+    left: 0;
+    top: 2rem;
+  }
+
+  .find_team_flow_wrapper .link_head {
+    font-size: 1rem;
+    color: #000;
+  }
+}
