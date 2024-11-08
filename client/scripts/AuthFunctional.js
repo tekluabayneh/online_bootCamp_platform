@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Navigate to home page on successful registration
-    window.location.href = "../Home.html";
+    window.location.href = "../Protectted/index.html";
   };
 });
 
