@@ -16,14 +16,19 @@ const IsuserIsAuthenticated = async () => {
 
     if (!result.success) {
       // Redirect to login if not authorized
-      window.location.href = "../Auth/Signin.html";
+      setInterval(() => {
+        window.location.href = "../Auth/Signin.html";
+      }, 2000);
+
       Show_user_Auth_level.innerHTML = result.message;
       Show_user_Auth_level.style.color = "red";
     } else {
       console.log("User authenticated:", result);
       Show_user_Auth_level.style.color = "green";
       Show_user_Auth_level.innerHTML = result.message;
-      window.location.href = "../Protectted/SEP/index.html";
+      setInterval(() => {
+        window.location.href = "../Protectted/SEP/index.html";
+      }, 3000);
     }
   } catch (error) {
     console.log("Error during authentication:", error);

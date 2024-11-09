@@ -2,6 +2,7 @@ const { json } = require("express");
 const db = require("../db/bdConnection");
 const bcrypt = require("bcrypt");
 const JWT = require("jsonwebtoken");
+require("dotenv").config();
 const Register = async (req, res) => {
   const { firstname, lastname, password, email } = req.body;
 
@@ -79,7 +80,9 @@ const login = async (req, res) => {
     }
 
     // Sign the JSON Web Token with the email
-    const token = JWT.sign({ email }, "1234567890", { expiresIn: "1d" });
+    const token = JWT.sign({ email }, process.env.SECRET_KEY, {
+      expiresIn: "1d",
+    });
 
     // Send success message and token
     res

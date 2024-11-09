@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Display message from server response
     showMessage.innerHTML = result.message;
+    showMessage.style.color = "green";
     if (!result.success) {
       return; // Prevent navigation on failure
     }
@@ -94,7 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Navigate to home page on successful registration
-    window.location.href = "../Protectted/index.html";
+
+    setInterval(() => {
+      window.location.href = "../Protectted/index.html";
+    }, 3000);
   };
 });
 
@@ -144,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const result = await response.json();
     showSignMessage.innerHTML = result.message;
-
+    showSignMessage.style.color = "green";
     // Prevent navigation on failure
     if (!result.success) return;
 
@@ -155,7 +159,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // store the toke  in the localStorage
     localStorage.setItem("authToken", result.token);
 
-    window.location.href = "../Protectted/index.html";
+    setInterval(() => {
+      window.location.href = "../Protectted/index.html";
+    }, 3000);
   };
 
   btnLogin.addEventListener("submit", Login);
