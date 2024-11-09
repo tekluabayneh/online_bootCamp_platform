@@ -126,7 +126,7 @@ img {
   margin: 0 auto;
 }
 .h_counter_section {
-  margin-top: -150px;
+  margin-top: -140px;
   z-index: 9;
   position: relative;
   background: #ffffffb5;
@@ -606,8 +606,6 @@ p {
 }
 
 #academy .applicant-img img {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   border-radius: 0.625rem;
   box-shadow: 25px 60px 125px -25px rgba(80, 102, 144, 0.1),
     16px 40px 75px -40px rgba(0, 0, 0, 0.2);

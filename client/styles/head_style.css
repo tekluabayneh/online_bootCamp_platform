@@ -22,19 +22,20 @@ html {
   right: 0;
   z-index: 99;
   transition: 0.5 ease;
-  /* background: #000; */
+  background: #000;
 }
 
 .container {
   width: 100%;
   padding: 12px;
-  padding-right: 2rem;
+  padding-right: 3rem;
   transition: 0.5s ease;
 }
 
 .header_active {
-  background: #000;
+  /* background: #000; */
   transition: 0.5s ease;
+  /* padding: 1px; */
 }
 .container_active {
   padding: 5px;

@@ -16,16 +16,6 @@ $(function () {
   $(".offcanvas_menu_wrapper").on("click", (e) => {
     e.stopPropagation();
   });
-
-  // Scroll event for header
-  $(window).on("scroll", () => {
-    var scrollTop = $(window).scrollTop();
-    if (scrollTop > 12) {
-      $(".header").addClass("header_active");
-      $("#container").addClass("container_active");
-    } else {
-      $(".header").removeClass("header_active");
-      $("#container").removeClass("container_active");
-    }
-  });
 });
+
+$(".header_show_bg").addClass("header_active");
