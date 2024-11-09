@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const Router = require("./router/AuthRouter");
+const checkuser = require("./middleware/middleware");
 const port = 3000;
 
 // midelwares
@@ -14,9 +15,8 @@ app.use(
   })
 );
 
-
 app.use("/api/users", Router);
-
+app.get("/user/check", checkuser);
 app.listen(port, async (err) => {
   if (err) {
     console.log("thire was Error" + err);

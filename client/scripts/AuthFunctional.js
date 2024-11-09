@@ -143,13 +143,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const result = await response.json();
-
     showSignMessage.innerHTML = result.message;
-    if (!result.success) return; // Prevent navigation on failure
+
+    // Prevent navigation on failure
+    if (!result.success) return;
 
     inputs.forEach((input) => {
       input.value = "";
     });
+
+    // store the toke  in the localStorage
+    localStorage.setItem("authToken", result.token);
 
     window.location.href = "../Protectted/index.html";
   };
