@@ -5,12 +5,17 @@ const IsuserIsAuthenticated = async () => {
   try {
     const token = window.localStorage.getItem("authToken");
 
-    const response = await fetch("http://localhost:3000/user/check", {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    //  fetch("http://localhost:3000/user/check");
+    // https://onlineplatformserver-production.up.railway.app/
+    const response = await fetch(
+      "https://onlineplatformserver-production.up.railway.app/user/check",
+      {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
 
     const result = await response.json();
 
