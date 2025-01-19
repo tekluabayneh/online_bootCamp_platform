@@ -13,7 +13,7 @@ const Register = async (req, res) => {
   }
   try {
     // check if the user has laready acount
-    const query = `SELECT * FROM userdb WHERE  email = ?`;
+    const query = `SELECT * FROM users WHERE  email = ?`;
     const [result] = await db.execute(query, [email]);
 
     // check is the user is not already exist
@@ -35,7 +35,7 @@ const Register = async (req, res) => {
     const HashedPassword = await bcrypt.hash(password, salt);
 
     // add the user if the user is not register before
-    const inserQuery = `INSERT INTO userdb(firstname, lastname, password, email)VALUES(?, ?, ?, ?)`;
+    const inserQuery = `INSERT INTO users(firstname, lastname, password, email)VALUES(?, ?, ?, ?)`;
     await db.execute(inserQuery, [firstname, lastname, HashedPassword, email]);
 
     // response the success if it success
@@ -60,7 +60,7 @@ const login = async (req, res) => {
     }
 
     // Check if the user has a record
-    const sqlquery = `SELECT * FROM userdb WHERE email = ?`;
+    const sqlquery = `SELECT * FROM users WHERE email = ?`;
     const [result] = await db.execute(sqlquery, [email]);
 
     // Handle case when user is not found

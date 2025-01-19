@@ -75,16 +75,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // fetch("http://localhost:3000/api/users/Register");
     // https://onlineplatformserver-production.up.railway.app/
     // Post the data to the server
-    const response = await fetch(
-      "https://onlineplatformserver-production.up.railway.app/api/users/Register",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      }
-    );
+    const response = await fetch("http://localhost:8080/api/users/Register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
     const result = await response.json();
 
     // Display message from server response
@@ -142,16 +139,13 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     // fetch("http://localhost:3000/api/users/login"); // Old fetch URL
     // https://onlineplatformserver-production.up.railway.app/
-    const response = await fetch(
-      "https://onlineplatformserver-production.up.railway.app/api/users/login",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      }
-    );
+    const response = await fetch("http://localhost:8080/api/users/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
     const result = await response.json();
     showSignMessage.innerHTML = result.message;
