@@ -43,6 +43,7 @@ var db = mysql.createPool({
 
 db.query("SELECT 1+1").on("result", function (row) {
   console.log(row);
+  console.log("database is connected");
 });
 
 module.exports = db.promise();

@@ -1,6 +1,6 @@
 const { json } = require("express");
 const db = require("../db/bdConnection");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const JWT = require("jsonwebtoken");
 require("dotenv").config();
 const Register = async (req, res) => {
