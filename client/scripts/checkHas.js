@@ -7,12 +7,16 @@ const IsuserIsAuthenticated = async () => {
 
     //  fetch("http://localhost:3000/user/check");
     // https://onlineplatformserver-production.up.railway.app/
-    const response = await fetch("http://localhost:8080/user/check", {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    // https://online-bootcamp-platform.onrender.com/
+    const response = await fetch(
+      "https://online-bootcamp-platform.onrender.com/user/check",
+      {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
 
     const result = await response.json();
 
